@@ -8,9 +8,9 @@ namespace FactoryPattern.SimpleFactory
 {
     class PizzaStore
     {
-        SimplePizzaFactory factory;
+        PizzaSimpleFactory factory;
 
-        public PizzaStore(SimplePizzaFactory factory)
+        public PizzaStore(PizzaSimpleFactory factory)
         {
             this.factory = factory;
         }

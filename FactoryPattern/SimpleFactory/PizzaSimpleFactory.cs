@@ -2,7 +2,7 @@
 
 namespace FactoryPattern.SimpleFactory
 {
-    internal class SimplePizzaFactory
+    internal class PizzaSimpleFactory
     {
         internal IPizza CreatePizza(string type)
         {
