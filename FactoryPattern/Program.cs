@@ -23,7 +23,8 @@ namespace FactoryPattern
 
             cheesePizza.Bake();
 
-            PizzaStore store = new PizzaStore(new SimplePizzaFactory());
+            SimplePizzaFactory pizzaFactory = new SimplePizzaFactory();
+            PizzaStore store = new PizzaStore(pizzaFactory);
 
             store.OrderPizza("veggie");
 
