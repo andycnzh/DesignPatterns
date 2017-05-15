@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace FactoryPattern.SimpleFactory
+﻿namespace FactoryPattern.InterfaceImplement
 {
     public interface IPizza
     {

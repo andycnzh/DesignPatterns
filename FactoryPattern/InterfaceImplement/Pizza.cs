@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace FactoryPattern.SimpleFactory
+namespace FactoryPattern.InterfaceImplement
 {
-    class Pizza : IPizza
+    public class Pizza : IPizza
     {
         public void Prepare()
         {

@@ -1,9 +1,8 @@
-﻿using FactoryPattern.SimpleFactory;
+﻿using FactoryPattern.AbstractImplement;
+using FactoryPattern.Factory;
+using FactoryPattern.InterfaceImplement;
+using FactoryPattern.SimpleFactory;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FactoryPattern
 {
@@ -11,22 +10,30 @@ namespace FactoryPattern
     {
         static void Main(string[] args)
         {
-            IPizza pizza = new Pizza();
+            PizzaTestDrive test = new PizzaTestDrive();
+            test.Test();
+            //IPizza pizza = new Pizza();
 
-            pizza.Prepare();
+            //pizza.Prepare();
 
-            pizza.Bake();
+            //pizza.Bake();
 
-            CheesePizza cheesePizza = new CheesePizza();
+            //CheesePizza cheesePizza = new CheesePizza();
 
-            cheesePizza.Prepare();
+            //cheesePizza.Prepare();
 
-            cheesePizza.Bake();
+            //cheesePizza.Bake();
 
-            PizzaSimpleFactory pizzaFactory = new PizzaSimpleFactory();
-            PizzaStore store = new PizzaStore(pizzaFactory);
+            //PizzaSimpleFactory pizzaFactory = new PizzaSimpleFactory();
+            //SimpleFactory.PizzaStore store = new SimpleFactory.PizzaStore(pizzaFactory);
 
-            store.OrderPizza("veggie");
+            //store.OrderPizza("veggie");
+
+            //NYPizzaStore nyPizzaStore = new NYPizzaStore();
+            //nyPizzaStore.OrderPizza("cheese");
+
+            //ChicagoPizzaStore chPizzaStore = new ChicagoPizzaStore();
+            //chPizzaStore.OrderPizza("veggie");
 
             Console.ReadLine();
         }
